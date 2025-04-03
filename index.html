@@ -5,42 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио | Копирайтер, Таро, Астрология</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 40px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .header {
             display: flex;
             align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
         .header img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             margin-right: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #444;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #666;
         }
         .section {
-            margin-top: 20px;
+            margin-top: 30px;
         }
-        h1, h2 {
-            color: #333;
+        .section h2 {
+            color: #444;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .section p {
+            line-height: 1.6;
         }
         .contact {
-            margin-top: 20px;
-            padding: 10px;
-            background: #ddd;
-            border-radius: 5px;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
+        .contact h2 {
+            margin-top: 0;
+        }
+        .contact p {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .contact p i {
+            margin-right: 10px;
+            color: #888;
+        }
+        /* FontAwesome Icons */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
     </style>
 </head>
 <body>
@@ -55,7 +92,7 @@
         
         <div class="section">
             <h2>О себе</h2>
-            <p>Я – креативный копирайтер, превращающий слова в эмоции. Более 10 лет изучаю Таро и астрологию, создаю уникальные тексты и плету этнические браслеты, вкладывая в них душу и символизм.</p>
+            <p>Я – креативный копирайтер, превращающий слова в эмоции. Более 10 лет изучаю Таро и астрологию, создаю уникальные тексты и этнические украшения.</p>
         </div>
         
         <div class="section">
@@ -67,8 +104,8 @@
         
         <div class="contact">
             <h2>Свяжитесь со мной</h2>
-            <p>📞 Телефон: +7 (960) 512-00-71</p>
-            <p>📧 Email: efimofig@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Телефон: +7 (960) 512-00-71</p>
+            <p><i class="fas fa-envelope"></i> Email: efimofig@gmail.com</p>
         </div>
     </div>
 </body>
