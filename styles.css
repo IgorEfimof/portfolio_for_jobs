@@ -1,5 +1,4 @@
 /* Основные стили */
-/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,6 +25,23 @@ body {
     padding: 20px;
 }
 
+.works {
+    display: flex; /* Включаем flexbox для контейнера */
+    flex-wrap: wrap; /* Разрешаем перенос строк */
+    justify-content: space-between; /* Равномерное распределение элементов */
+    gap: 20px; /* Расстояние между блоками */
+}
+
+.work-item {
+    width: 45%; /* Ширина каждого блока, чтобы уместилось 2 в ряд */
+    margin: 10px 0; /* Отступы между блоками */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Медиазапрос для экранов шириной менее 768 пикселей */
 @media (max-width: 768px) {
     .container {
@@ -37,9 +53,13 @@ body {
         width: 100%;
         padding: 10px;
     }
+
+    .work-item {
+        width: 100%; /* На маленьких экранах блоки занимают всю ширину */
+    }
 }
 
-/* Add these styles */
+/* Дополнительные стили */
 .header h1,
 .header .works-link {
     margin-left: 0;
